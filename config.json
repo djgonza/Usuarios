@@ -1,6 +1,6 @@
 {
 	"maxJsonFileAccept": "1mb",
-	"databaseString": "mongodb://localhost:27017/Users",
+	"databaseString": "mongodb+srv://admin:admin*1@cluster0-8xwkf.mongodb.net/test",
 	"userTokenSecret": "userSeccret",
 	"expiresToken": "secretExpiresToken",
 	"timeToExpireToken": "1000"
