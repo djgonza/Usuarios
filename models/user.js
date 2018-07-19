@@ -4,7 +4,7 @@ const User = mongoose.model('User',
 { 
 	name: String,
 	secret: String,
-	domain: String,
+	domains: [String],
 	updateDate: { 
 		type: Date,
 		default: Date.now

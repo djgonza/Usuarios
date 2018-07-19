@@ -1,15 +1,11 @@
 const express = require('express');
 const router = express.Router();
 
-const validateUserToken = require('utilities/validateUserToken');
-
 /* Users */
 router.post('/user/create', require('./createUser'));
-router.post('/user/login', require('./login'));
-
 /* Tokens */
-router.get('/refreshToken', validateUserToken, require('./refreshToken'));
-
-
+router.post('/token/refreshToken', require('./refreshToken'));
+router.get('/token/accessToken', require('./accessToken'));
+router.post('/token/validateAccessToken', require('./validateAccessToken'));
 
 module.exports = router;

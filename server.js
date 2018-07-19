@@ -30,7 +30,7 @@ app.use(bodyParser.json());
 
 app.use(routes);
 
-const port = process.env.PORT || 3500;
+const port = process.env.PORT || 3600;
 app.listen(port, () => {
 
 	console.log('Server start in port: '.green, colors.green(port));

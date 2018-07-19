@@ -1,7 +1,9 @@
 {
+	"domain": "users",
 	"maxJsonFileAccept": "1mb",
 	"databaseString": "mongodb://aplication:aplication*1@cluster0-shard-00-00-8xwkf.mongodb.net:27017,cluster0-shard-00-01-8xwkf.mongodb.net:27017,cluster0-shard-00-02-8xwkf.mongodb.net:27017/Users?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin",
-	"userTokenSecret": "userSeccret",
-	"expiresToken": "secretExpiresToken",
-	"timeToExpireToken": "1000"
+	"refreshTokenSecret": "refreshTokenSecret",
+	"expiresTimeRefreshToken": 3600,
+	"accessTokenSecret": "accessTokenSecret",
+	"expiresTimeAccessToken": 300
 }
